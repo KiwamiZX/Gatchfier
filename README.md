@@ -1,5 +1,5 @@
+<p align="center"><img width="400" height="400" alt="vertical logo" src="https://github.com/user-attachments/assets/cd5289e7-17ab-49d6-848f-da71d8a3c2cd" /></p>
 
-# Gatchfier
 
 Gatchfier is a modern network diagnostic tool built with PySide6. It provides a clean, intuitive interface for performing essential network operations like ping, traceroute, port scanning, DNS lookups, and WHOIS queries—all in one place. Designed for IT professionals, students, and enthusiasts, Gatchfier makes network troubleshooting simple and visually appealing.
 
@@ -22,10 +22,12 @@ Gatchfier is a modern network diagnostic tool built with PySide6. It provides a 
 
 ## Screenshots
 
-<img width="752" height="539" alt="image" src="https://github.com/user-attachments/assets/cf330f12-a464-4698-aa72-3b355d638d00" />
+<p align="center"><img width="752" height="539" alt="image" src="https://github.com/user-attachments/assets/cf330f12-a464-4698-aa72-3b355d638d00" /></p>
 
-<img width="752" height="539" alt="image" src="https://github.com/user-attachments/assets/257a5d22-a375-4bc4-9b5a-76d39c1b7a57" />
 
+<p align="center"><img width="752" height="539" alt="image" src="https://github.com/user-attachments/assets/257a5d22-a375-4bc4-9b5a-76d39c1b7a57" /></p>
+
+<img width="752" height="539" alt="image" src="https://github.com/user-attachments/assets/b20498fb-1562-4759-ade8-247794704df8" />
 
 
 ## Installation
