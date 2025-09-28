@@ -27,7 +27,7 @@ Gatchfier is a modern network diagnostic tool built with PySide6. It provides a 
 
 <p align="center"><img width="752" height="539" alt="image" src="https://github.com/user-attachments/assets/257a5d22-a375-4bc4-9b5a-76d39c1b7a57" /></p>
 
-<img width="752" height="539" alt="image" src="https://github.com/user-attachments/assets/b20498fb-1562-4759-ade8-247794704df8" />
+<p align="center"><img width="752" height="539" alt="image" src="https://github.com/user-attachments/assets/b20498fb-1562-4759-ade8-247794704df8" /></p>
 
 
 ## Installation
