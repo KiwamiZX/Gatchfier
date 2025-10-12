@@ -1,92 +1,50 @@
 <p align="center"><img width="400" height="400" alt="vertical logo" src="https://github.com/user-attachments/assets/cd5289e7-17ab-49d6-848f-da71d8a3c2cd" /></p>
 
+# Gatchfier Network Toolkit
 
-Gatchfier is a modern network diagnostic tool built with PySide6. It provides a clean, intuitive interface for performing essential network operations like ping, traceroute, port scanning, DNS lookups, and WHOIS queries—all in one place. Designed for IT professionals, students, and enthusiasts, Gatchfier makes network troubleshooting simple and visually appealing.
+Gatchfier is a PySide6 desktop application that bundles together day-to-day network diagnostics in a single, themeable UI. The refreshed interface offers both neon and light modes while keeping each tool focused and easy to use.
 
 ## Features
 
--   Ping utility with IPv4 and IPv6 support, including continuous and limited modes
-    
--   Traceroute with live output and cancel option
-    
--   Port scanner to detect open ports on a target host
-    
--   DNS lookup tool for resolving domain names and viewing DNS records
-    
--   WHOIS query tool for retrieving domain registration information
-    
--   Light and dark theme toggle with dynamic splash screen
-    
--   Custom icons and branding for a polished user experience
-    
+- **Ping** – run single or continuous ICMP echo tests, track latency statistics, and view live logs.
+- **Traceroute** – trace IPv4/IPv6 network paths with controllable hop limits and responsive cancellation.
+- **Port Scan** – perform full TCP port sweeps with live progress updates and summarised results.
+- **DNS Lookup** – resolve IPv4 or IPv6 records using the system resolver.
+- **Whois** – query domain registration details and display key ownership fields.
+- **Theme Toggle** – switch between neon and light themes and persist the preference across sessions.
+- **Safe Config Storage** – user preferences live in `%USERPROFILE%\.gatchfier\config.json` to keep the app portable.
+
+## Requirements
+
+- Windows 10 or later
+- Python 3.10+ (for development)
+- Recommended: PowerShell 7+ for running helper scripts
 
 ## Screenshots
-
-<p align="center"><img width="752" height="539" alt="image" src="https://github.com/user-attachments/assets/cf330f12-a464-4698-aa72-3b355d638d00" /></p>
-
-
-<p align="center"><img width="752" height="539" alt="image" src="https://github.com/user-attachments/assets/257a5d22-a375-4bc4-9b5a-76d39c1b7a57" /></p>
-
-<p align="center"><img width="752" height="539" alt="image" src="https://github.com/user-attachments/assets/b20498fb-1562-4759-ade8-247794704df8" /></p>
+<img width="1919" height="1021" alt="image" src="https://github.com/user-attachments/assets/e2853aa3-e243-4e9f-a50f-8ce9d673282c" />
+<img width="1919" height="1022" alt="image" src="https://github.com/user-attachments/assets/8c16df3e-082a-4cf3-87c6-d1903856f6e0" />
 
 
-## Installation
+## Getting Started (Development)
 
-Requirements:
+1. Create and activate a virtual environment.
+2. Install dependencies:
+   ```powershell
+   pip install -r requirements.txt
+   ```
+3. Launch the application from source:
+   ```powershell
+   python app.py
+   ```
 
--   Python 3.10 or higher
-    
--   Recommended: virtual environment
-    
+Configuration files are written to `%USERPROFILE%\.gatchfier`. Delete the folder if you need to reset stored preferences.
 
-To install dependencies:
+## Project Layout
 
-Código
-
-```
-pip install -r requirements.txt
-
-```
-
-To run the application:
-
-Código
-
-```
-python app.py
-
-```
-
-## Packaging with PyInstaller
-
-To build a standalone executable:
-
-Código
-
-```
-pyinstaller gatchfier.spec
-
-```
-
-Make sure all icons, splash screens, and config files are included in the `.spec` file and that your code uses `sys._MEIPASS` to access bundled resources.
-
-## Project Structure
-
--   `app.py`: Main application entry point
-    
--   `config.json`: Stores theme preferences
-    
--   `icons/`: Contains all logos, icons, and splash images
-    
--   `tabs/`: Contains individual modules for each network tool
-    
--   `requirements.txt`: Lists all required Python packages
-    
-
-## Contributing
-
-Pull requests are welcome! If you have ideas for new features, UI improvements, or bug fixes, feel free to contribute.
+- `app.py` – application entry point, window chrome, theming, and tab registration.
+- `tabs/` – individual tool implementations (ping, traceroute, port scan, DNS, whois).
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is released under the [MIT License](LICENSE).
+
