@@ -12,13 +12,15 @@ from tabs.portscan_tab import PortScannerTab
 from tabs.dns_tab import DNSTab
 from tabs.whois import WhoisTab
 
-# 🔧 Locate resources when running from source or a bundled executable
+
+# Locate resources when running from source or a bundled executable
 def resource_path(relative_path):
     if hasattr(sys, '_MEIPASS'):
         return os.path.join(sys._MEIPASS, relative_path)
     return os.path.join(os.path.abspath("."), relative_path)
 
-# 🔧 Build the path where the app stores user-specific configuration
+
+# Build the path where the app stores user-specific configuration
 def get_config_path():
     config_dir = os.path.join(os.path.expanduser("~"), ".gatchfier")
     os.makedirs(config_dir, exist_ok=True)
